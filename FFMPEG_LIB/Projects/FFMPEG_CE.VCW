@@ -1,0 +1,122 @@
+Microsoft eMbedded Visual Tools Workspace File, Format Version 4.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "OpenTimeCE"=.\OpenTimeCE.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ffplay"=.\ffplay.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name libavcodec
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libavformat
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libavutil
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name libswscale
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name OpenTimeCE
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name sdlcedll_evc4
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "libavcodec"=.\libavcodec.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libavformat"=.\libavformat.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name OpenTimeCE
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "libavutil"=.\libavutil.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "libswscale"=.\libswscale.vcp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sdlcedll_evc4"="..\SDL-1.2.7\VISUALCE\sdlcedll_evc4\sdlcedll_evc4.vcp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

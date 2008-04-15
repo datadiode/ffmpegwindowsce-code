@@ -1,0 +1,5992 @@
+# Microsoft eMbedded Visual Tools Project File - Name="libavcodec" - Package Owner=<4>
+# Microsoft eMbedded Visual Tools Generated Build File, Format Version 6.02
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (WCE ARMV4I) Static Library" 0xa504
+
+CFG=LIBAVCODEC - WIN32 (WCE ARMV4I) DEBUG FIXPOINT
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "libavcodec.vcn".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "libavcodec.vcn" CFG="LIBAVCODEC - WIN32 (WCE ARMV4I) DEBUG FIXPOINT"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "libavcodec - Win32 (WCE ARMV4I) Debug Fixpoint" (based on "Win32 (WCE ARMV4I) Static Library")
+!MESSAGE "libavcodec - Win32 (WCE ARMV4I) Release Fixpoint" (based on "Win32 (WCE ARMV4I) Static Library")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+# PROP ATL_Project 2
+CPP=clarm.exe
+
+!IF  "$(CFG)" == "libavcodec - Win32 (WCE ARMV4I) Debug Fixpoint"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "ARMV4IDebug Fixpoint"
+# PROP BASE Intermediate_Dir "ARMV4IDebug Fixpoint"
+# PROP BASE CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "..\..\Build\Intermediate\libavcodec\ARMV4IDebug\"
+# PROP Intermediate_Dir "..\..\Build\Intermediate\libavcodec\ARMV4IDebug\"
+# PROP CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /Zi /Od /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "WIN32" /D "MS99_TEST" /D "USE_HIGHPRECISION" /D "CONFIG_ALIGN" /D "UNDER_CE" /FR /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug) /c
+# ADD CPP /nologo /W3 /Zi /Od /I "..\ffmpeg\include" /I "..\ffmpeg\libavutil" /I "..\ffmpeg\libavcodec" /D "DEBUG" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "_LIB" /D "WIN32" /D "MS99_TEST" /D "USE_HIGHPRECISION" /D "CONFIG_ALIGN" /D "UNDER_CE" /FR /YX /QRarch4T /QRinterwork-return /M$(CECrtMTDebug) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"..\..\Build\Lib\libavcodec\ARMV4I\libavcodecD.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ELSEIF  "$(CFG)" == "libavcodec - Win32 (WCE ARMV4I) Release Fixpoint"
+
+# PROP BASE Use_MFC 0
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "ARMV4IRelease Fixpoint"
+# PROP BASE Intermediate_Dir "ARMV4IRelease Fixpoint"
+# PROP BASE CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP BASE Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 0
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "..\..\Build\Intermediate\libavcodec\ARMV4IRelease\"
+# PROP Intermediate_Dir "..\..\Build\Intermediate\libavcodec\ARMV4IRelease\"
+# PROP CPU_ID "{DC70F430-E78B-494F-A9D5-62ADC56443B8}"
+# PROP Platform_ID "{8A9A2F80-6887-11D3-842E-005004848CBA}"
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /W3 /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_LIB" /D "WIN32" /D "MS99_TEST" /D "USE_HIGHPRECISION" /D "CONFIG_ALIGN" /D "UNDER_CE" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT) /c
+# ADD CPP /nologo /W3 /I "..\ffmpeg\include" /I "..\ffmpeg\libavutil" /I "..\ffmpeg\libavcodec" /D _WIN32_WCE=$(CEVersion) /D "ARM" /D "_ARM_" /D "$(CePlatform)" /D "ARMV4I" /D UNDER_CE=$(CEVersion) /D "UNICODE" /D "_UNICODE" /D "NDEBUG" /D "_LIB" /D "WIN32" /D "MS99_TEST" /D "USE_HIGHPRECISION" /D "CONFIG_ALIGN" /D "UNDER_CE" /YX /QRarch4T /QRinterwork-return /O2 /M$(CECrtMT) /c
+LIB32=link.exe -lib
+# ADD BASE LIB32 /nologo
+# ADD LIB32 /nologo /out:"..\..\Build\Lib\libavcodec\ARMV4I\libavcodec.lib"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+
+!ENDIF 
+
+# Begin Target
+
+# Name "libavcodec - Win32 (WCE ARMV4I) Debug Fixpoint"
+# Name "libavcodec - Win32 (WCE ARMV4I) Release Fixpoint"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\4xm.c
+DEP_CPP_4XM_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_4XM_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\8bps.c
+DEP_CPP_8BPS_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_8BPS_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\aac_ac3_parser.c
+DEP_CPP_AAC_A=\
+	"..\ffmpeg\libavcodec\aac_ac3_parser.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\aac_parser.c
+DEP_CPP_AAC_P=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\aac_ac3_parser.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_AAC_P=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\aasc.c
+DEP_CPP_AASC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_AASC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3.c
+DEP_CPP_AC3_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\ac3.h"\
+	"..\ffmpeg\libavcodec\ac3tab.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_AC3_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3_parser.c
+DEP_CPP_AC3_P=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\aac_ac3_parser.h"\
+	"..\ffmpeg\libavcodec\ac3.h"\
+	"..\ffmpeg\libavcodec\ac3_parser.h"\
+	"..\ffmpeg\libavcodec\ac3tab.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_AC3_P=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3enc.c
+DEP_CPP_AC3EN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\ac3.h"\
+	"..\ffmpeg\libavcodec\ac3tab.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\crc.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_AC3EN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3tab.c
+DEP_CPP_AC3TA=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\ac3tab.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_AC3TA=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\adpcm.c
+DEP_CPP_ADPCM=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ADPCM=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\adx.c
+DEP_CPP_ADX_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ADX_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\alac.c
+DEP_CPP_ALAC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ALAC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\allcodecs.c
+DEP_CPP_ALLCO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ALLCO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\asv1.c
+DEP_CPP_ASV1_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ASV1_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\atrac3.c
+DEP_CPP_ATRAC=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\atrac3data.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ATRAC=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\audioconvert.c
+DEP_CPP_AUDIO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_AUDIO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\avs.c
+DEP_CPP_AVS_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_AVS_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bethsoftvideo.c
+DEP_CPP_BETHS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bethsoftvideo.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_BETHS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bits.c
+DEP_CPP_BITS_=\
+	"..\ffmpeg\libavcodec\bits.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bitstream.c
+DEP_CPP_BITST=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_BITST=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bitstream_filter.c
+DEP_CPP_BITSTR=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_BITSTR=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\block.c
+DEP_CPP_BLOCK=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\kbd_win.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	"..\ffmpeg\libavcodec\transfo.h"\
+	
+NODEP_CPP_BLOCK=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bmp.c
+DEP_CPP_BMP_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bmp.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_BMP_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bmpenc.c
+DEP_CPP_BMPEN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bmp.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_BMPEN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\c93.c
+DEP_CPP_C93_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_C93_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cabac.c
+DEP_CPP_CABAC=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\cabac.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	"..\ffmpeg\libavutil\x86_cpu.h"\
+	
+NODEP_CPP_CABAC=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cavs.c
+DEP_CPP_CAVS_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\cavs.h"\
+	"..\ffmpeg\libavcodec\cavsdata.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CAVS_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cavs_parser.c
+DEP_CPP_CAVS_P=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\cavs.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CAVS_P=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cavsdsp.c
+DEP_CPP_CAVSD=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CAVSD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cinepak.c
+DEP_CPP_CINEP=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CINEP=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cljr.c
+DEP_CPP_CLJR_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CLJR_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\config.c
+DEP_CPP_CONFI=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_CONFI=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cook.c
+DEP_CPP_COOK_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\cookdata.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\random.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_COOK_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cscd.c
+DEP_CPP_CSCD_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\lzo.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CSCD_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cyuv.c
+DEP_CPP_CYUV_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_CYUV_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dca.c
+DEP_CPP_DCA_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dca.h"\
+	"..\ffmpeg\libavcodec\dcadata.h"\
+	"..\ffmpeg\libavcodec\dcahuff.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DCA_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dca_parser.c
+DEP_CPP_DCA_P=\
+	"..\ffmpeg\libavcodec\dca.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\decdata.c
+DEP_CPP_DECDA=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_DECDA=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\decoder.c
+DEP_CPP_DECOD=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	"..\ffmpeg\libavcodec\transfo.h"\
+	
+NODEP_CPP_DECOD=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dnxhddec.c
+DEP_CPP_DNXHD=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dnxhddata.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DNXHD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dolby_adapt.c
+DEP_CPP_DOLBY=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_DOLBY=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dpcm.c
+DEP_CPP_DPCM_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DPCM_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dsicinav.c
+DEP_CPP_DSICI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DSICI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dsputil.c
+DEP_CPP_DSPUT=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\faandct.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\simple_idct.h"\
+	"..\ffmpeg\libavcodec\snow.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DSPUT=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dump_extradata_bsf.c
+DEP_CPP_DUMP_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DUMP_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dv.c
+DEP_CPP_DV_C5a=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\dvdata.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\simple_idct.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DV_C5a=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvbsub.c
+DEP_CPP_DVBSU=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DVBSU=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvbsub_parser.c
+DEP_CPP_DVBSUB=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DVBSUB=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvbsubdec.c
+DEP_CPP_DVBSUBD=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DVBSUBD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvdsub_parser.c
+DEP_CPP_DVDSU=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DVDSU=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvdsubdec.c
+DEP_CPP_DVDSUB=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DVDSUB=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvdsubenc.c
+DEP_CPP_DVDSUBE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_DVDSUBE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dxa.c
+# PROP BASE Exclude_From_Build 1
+# PROP Exclude_From_Build 1
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\error_resilience.c
+DEP_CPP_ERROR=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ERROR=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\eval.c
+DEP_CPP_EVAL_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\nan.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_EVAL_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faac.c
+DEP_CPP_FAAC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\faac.h"\
+	"..\ffmpeg\libavcodec\faaccfg.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FAAC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faad.c
+DEP_CPP_FAAD_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\faad.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FAAD_=\
+	"..\ffmpeg\libavcodec\config.h"\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faandct.c
+DEP_CPP_FAAND=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\faandct.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FAAND=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\fastfft.c
+DEP_CPP_FASTF=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\fastfft.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	"..\ffmpeg\libavcodec\transfo.h"\
+	
+NODEP_CPP_FASTF=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\fdctref.c
+# End Source File
+# Begin Source File
+
+SOURCE="..\ffmpeg\libavcodec\fft-test.c"
+# PROP BASE Exclude_From_Build 1
+# PROP Exclude_From_Build 1
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\fft.c
+DEP_CPP_FFT_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FFT_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ffv1.c
+# PROP BASE Exclude_From_Build 1
+# PROP Exclude_From_Build 1
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\flac.c
+DEP_CPP_FLAC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\crc.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FLAC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\flicvideo.c
+DEP_CPP_FLICV=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FLICV=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\fraps.c
+DEP_CPP_FRAPS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_FRAPS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\g726.c
+DEP_CPP_G726_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_G726_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\gif.c
+DEP_CPP_GIF_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_GIF_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\gifdec.c
+DEP_CPP_GIFDE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\lzw.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_GIFDE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\golomb.c
+DEP_CPP_GOLOM=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_GOLOM=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h261.c
+DEP_CPP_H261_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h261.h"\
+	"..\ffmpeg\libavcodec\h261data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H261_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h261_parser.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h261dec.c
+DEP_CPP_H261D=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h261.h"\
+	"..\ffmpeg\libavcodec\h261data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H261D=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h261enc.c
+DEP_CPP_H261E=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h261.h"\
+	"..\ffmpeg\libavcodec\h261data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H261E=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h263.c
+DEP_CPP_H263_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h263data.h"\
+	"..\ffmpeg\libavcodec\mpeg4data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H263_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h263_parser.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h263dec.c
+DEP_CPP_H263D=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h263_parser.h"\
+	"..\ffmpeg\libavcodec\mpeg4video_parser.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\msmpeg4.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H263D=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264.c
+DEP_CPP_H264_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\cabac.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavcodec\h264.h"\
+	"..\ffmpeg\libavcodec\h264_parser.h"\
+	"..\ffmpeg\libavcodec\h264data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\svq3.c"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	"..\ffmpeg\libavutil\x86_cpu.h"\
+	
+NODEP_CPP_H264_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264_parser.c
+DEP_CPP_H264_P=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\cabac.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h264.h"\
+	"..\ffmpeg\libavcodec\h264_parser.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	"..\ffmpeg\libavutil\x86_cpu.h"\
+	
+NODEP_CPP_H264_P=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264dsp.c
+DEP_CPP_H264D=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H264D=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264enc.c
+DEP_CPP_H264E=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\h264data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H264E=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264idct.c
+DEP_CPP_H264I=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_H264I=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\huffdec.c
+DEP_CPP_HUFFD=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_HUFFD=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\huffinit.c
+DEP_CPP_HUFFI=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_HUFFI=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\hufftables.c
+DEP_CPP_HUFFT=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_HUFFT=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\huffyuv.c
+DEP_CPP_HUFFY=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_HUFFY=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\idcinvideo.c
+DEP_CPP_IDCIN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_IDCIN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\imc.c
+DEP_CPP_IMC_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\imcdata.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_IMC_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\imgconvert.c
+DEP_CPP_IMGCO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\i386\mmx.h"\
+	"..\ffmpeg\libavcodec\imgconvert_template.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_IMGCO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\imx_dump_header_bsf.c
+DEP_CPP_IMX_D=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_IMX_D=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\indeo2.c
+DEP_CPP_INDEO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\indeo2data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_INDEO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\indeo3.c
+DEP_CPP_INDEO3=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\indeo3data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_INDEO3=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\intensity.c
+DEP_CPP_INTEN=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_INTEN=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\interplayvideo.c
+DEP_CPP_INTER=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_INTER=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jfdctfst.c
+DEP_CPP_JFDCT=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_JFDCT=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jfdctint.c
+DEP_CPP_JFDCTI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_JFDCTI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jpegls.c
+DEP_CPP_JPEGL=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\jpegls.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_JPEGL=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jpeglsdec.c
+DEP_CPP_JPEGLS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavcodec\jpegls.h"\
+	"..\ffmpeg\libavcodec\jpeglsdec.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavcodec\mjpegdec.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_JPEGLS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jrevdct.c
+DEP_CPP_JREVD=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_JREVD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\kmvc.c
+DEP_CPP_KMVC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_KMVC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\lcl.c
+DEP_CPP_LCL_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_LCL_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\loco.c
+DEP_CPP_LOCO_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_LOCO_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\lzw.c
+DEP_CPP_LZW_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\lzw.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_LZW_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\lzwenc.c
+DEP_CPP_LZWEN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\lzw.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_LZWEN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mace.c
+DEP_CPP_MACE_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MACE_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mdct.c
+DEP_CPP_MDCT_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MDCT_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpeg.c
+DEP_CPP_MJPEG=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MJPEG=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpeg_parser.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpega_dump_header_bsf.c
+DEP_CPP_MJPEGA=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MJPEGA=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpegbdec.c
+DEP_CPP_MJPEGB=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavcodec\mjpegdec.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MJPEGB=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpegdec.c
+DEP_CPP_MJPEGD=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\jpeglsdec.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavcodec\mjpegdec.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MJPEGD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpegenc.c
+DEP_CPP_MJPEGE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavcodec\mjpegenc.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MJPEGE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mmvideo.c
+DEP_CPP_MMVID=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MMVID=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\monopred.c
+DEP_CPP_MONOP=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_MONOP=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\motion_est.c
+DEP_CPP_MOTIO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\motion_est_template.c"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MOTIO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mp3_header_compress_bsf.c
+DEP_CPP_MP3_H=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MP3_H=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mp3_header_decompress_bsf.c
+DEP_CPP_MP3_HE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodata.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MP3_HE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpc.c
+DEP_CPP_MPC_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpcdata.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\random.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPC_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpeg12.c
+DEP_CPP_MPEG1=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mdec.c"\
+	"..\ffmpeg\libavcodec\mpeg12data.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEG1=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpeg4video_parser.c
+DEP_CPP_MPEG4=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpeg4video_parser.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEG4=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudio.c
+DEP_CPP_MPEGA=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGA=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudio_parser.c
+DEP_CPP_MPEGAU=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodecheader.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGAU=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiodata.c
+DEP_CPP_MPEGAUD=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodata.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_MPEGAUD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiodec.c
+DEP_CPP_MPEGAUDI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\armv4l\mathops.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\i386\mathops.h"\
+	"..\ffmpeg\libavcodec\mathops.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodata.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodecheader.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodectab.h"\
+	"..\ffmpeg\libavcodec\ppc\mathops.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGAUDI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiodecheader.c
+DEP_CPP_MPEGAUDIO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavcodec\mpegaudiodata.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGAUDIO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegvideo.c
+DEP_CPP_MPEGV=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\faandct.h"\
+	"..\ffmpeg\libavcodec\mjpegenc.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\msmpeg4.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGV=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegvideo_parser.c
+DEP_CPP_MPEGVI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MPEGVI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msmpeg4.c
+DEP_CPP_MSMPE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\msmpeg4data.h"\
+	"..\ffmpeg\libavcodec\msmpeg4tab.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\simple_idct.h"\
+	"..\ffmpeg\libavcodec\wmv2.c"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MSMPE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msmpeg4data.c
+DEP_CPP_MSMPEG=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\msmpeg4data.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_MSMPEG=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msrle.c
+DEP_CPP_MSRLE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MSRLE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msvideo1.c
+DEP_CPP_MSVID=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_MSVID=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\noise_bsf.c
+DEP_CPP_NOISE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_NOISE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\nok_lt_prediction.c
+DEP_CPP_NOK_L=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common_internal.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_NOK_L=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\nuv.c
+DEP_CPP_NUV_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\rtjpeg.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\lzo.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_NUV_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\opt.c
+DEP_CPP_OPT_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\opt.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\nan.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_OPT_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\parser.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pcm.c
+DEP_CPP_PCM_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PCM_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\png.c
+DEP_CPP_PNG_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PNG_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# PROP BASE Exclude_From_Build 1
+# PROP Exclude_From_Build 1
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pnm.c
+DEP_CPP_PNM_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\pnm.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PNM_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pnm_parser.c
+DEP_CPP_PNM_P=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\pnm.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PNM_P=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pnmenc.c
+DEP_CPP_PNMEN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\pnm.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PNMEN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pns.c
+DEP_CPP_PNS_C=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_PNS_C=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pthread.c
+DEP_CPP_PTHRE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PTHRE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ptx.c
+DEP_CPP_PTX_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_PTX_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\qdm2.c
+DEP_CPP_QDM2_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\mpegaudio.h"\
+	"..\ffmpeg\libavcodec\qdm2data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_QDM2_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\qdrw.c
+DEP_CPP_QDRW_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_QDRW_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\qpeg.c
+DEP_CPP_QPEG_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_QPEG_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\qtrle.c
+DEP_CPP_QTRLE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_QTRLE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ra144.c
+DEP_CPP_RA144=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\ra144.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RA144=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ra288.c
+DEP_CPP_RA288=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\ra288.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RA288=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rangecoder.c
+DEP_CPP_RANGE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\rangecoder.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RANGE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ratecontrol.c
+DEP_CPP_RATEC=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\nan.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RATEC=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\raw.c
+DEP_CPP_RAW_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RAW_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\remove_extradata_bsf.c
+DEP_CPP_REMOV=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_REMOV=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\resample.c
+DEP_CPP_RESAM=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RESAM=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\resample2.c
+DEP_CPP_RESAMP=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RESAMP=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rle.c
+DEP_CPP_RLE_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\rle.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RLE_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\roqaudioenc.c
+DEP_CPP_ROQAU=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ROQAU=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\roqvideo.c
+DEP_CPP_ROQVI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\roqvideo.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ROQVI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\roqvideodec.c
+DEP_CPP_ROQVID=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\roqvideo.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ROQVID=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rpza.c
+DEP_CPP_RPZA_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RPZA_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rtjpeg.c
+DEP_CPP_RTJPE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\rtjpeg.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RTJPE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rv10.c
+DEP_CPP_RV10_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_RV10_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\s3tc.c
+DEP_CPP_S3TC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\s3tc.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_S3TC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\sgidec.c
+DEP_CPP_SGIDE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\sgi.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SGIDE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\sgienc.c
+DEP_CPP_SGIEN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\rle.h"\
+	"..\ffmpeg\libavcodec\sgi.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SGIEN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\shorten.c
+DEP_CPP_SHORT=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SHORT=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\simple_idct.c
+DEP_CPP_SIMPL=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\simple_idct.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SIMPL=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\smacker.c
+DEP_CPP_SMACK=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SMACK=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\smc.c
+DEP_CPP_SMC_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SMC_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\snow.c
+DEP_CPP_SNOW_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\rangecoder.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\snow.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SNOW_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\sonic.c
+DEP_CPP_SONIC=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\golomb.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SONIC=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\sp5xdec.c
+DEP_CPP_SP5XD=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mjpeg.h"\
+	"..\ffmpeg\libavcodec\mjpegdec.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\sp5x.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SP5XD=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\stereo.c
+DEP_CPP_STERE=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_STERE=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\svq1.c
+DEP_CPP_SVQ1_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\svq1_cb.h"\
+	"..\ffmpeg\libavcodec\svq1_vlc.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_SVQ1_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\targa.c
+DEP_CPP_TARGA=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TARGA=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\targaenc.c
+DEP_CPP_TARGAE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\rle.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TARGAE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tiertexseqv.c
+DEP_CPP_TIERT=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TIERT=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tiff.c
+DEP_CPP_TIFF_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\lzw.h"\
+	"..\ffmpeg\libavcodec\tiff.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TIFF_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tiffenc.c
+DEP_CPP_TIFFE=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\lzw.h"\
+	"..\ffmpeg\libavcodec\rle.h"\
+	"..\ffmpeg\libavcodec\tiff.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TIFFE=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tns.c
+DEP_CPP_TNS_C=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_TNS_C=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\transfo.c
+DEP_CPP_TRANS=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\fastfft.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	"..\ffmpeg\libavcodec\transfo.h"\
+	
+NODEP_CPP_TRANS=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\truemotion1.c
+DEP_CPP_TRUEM=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\truemotion1data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TRUEM=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\truemotion2.c
+DEP_CPP_TRUEMO=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TRUEMO=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\truespeech.c
+DEP_CPP_TRUES=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\truespeech_data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TRUES=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tscc.c
+DEP_CPP_TSCC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TSCC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tta.c
+DEP_CPP_TTA_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TTA_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\txd.c
+DEP_CPP_TXD_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\s3tc.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_TXD_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ulti.c
+DEP_CPP_ULTI_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\ulti_cb.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ULTI_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\util.c
+DEP_CPP_UTIL_=\
+	"..\ffmpeg\libavcodec\all.h"\
+	"..\ffmpeg\libavcodec\bits.h"\
+	"..\ffmpeg\libavcodec\block.h"\
+	"..\ffmpeg\libavcodec\interface.h"\
+	"..\ffmpeg\libavcodec\monopred.h"\
+	"..\ffmpeg\libavcodec\nok_lt_prediction.h"\
+	"..\ffmpeg\libavcodec\nok_ltp_common.h"\
+	"..\ffmpeg\libavcodec\port.h"\
+	"..\ffmpeg\libavcodec\tns.h"\
+	
+NODEP_CPP_UTIL_=\
+	"..\ffmpeg\libavcodec\config.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\utils.c
+DEP_CPP_UTILS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\opt.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\crc.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_UTILS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1.c
+DEP_CPP_VC1_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\msmpeg4data.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vc1.h"\
+	"..\ffmpeg\libavcodec\vc1acdata.h"\
+	"..\ffmpeg\libavcodec\vc1data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VC1_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1_parser.c
+DEP_CPP_VC1_P=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vc1.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VC1_P=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1data.c
+DEP_CPP_VC1DA=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vc1.h"\
+	"..\ffmpeg\libavcodec\vc1data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VC1DA=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1dsp.c
+DEP_CPP_VC1DS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VC1DS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vcr1.c
+DEP_CPP_VCR1_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VCR1_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vmdav.c
+DEP_CPP_VMDAV=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VMDAV=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vmnc.c
+DEP_CPP_VMNC_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VMNC_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vorbis.c
+DEP_CPP_VORBI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\vorbis.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VORBI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vorbis_data.c
+DEP_CPP_VORBIS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\vorbis.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VORBIS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vorbis_dec.c
+DEP_CPP_VORBIS_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\vorbis.h"\
+	"..\ffmpeg\libavcodec\xiph.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VORBIS_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp3.c
+DEP_CPP_VP3_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vp3data.h"\
+	"..\ffmpeg\libavcodec\xiph.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VP3_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp3dsp.c
+DEP_CPP_VP3DS=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VP3DS=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp5.c
+DEP_CPP_VP5_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vp56.h"\
+	"..\ffmpeg\libavcodec\vp56data.h"\
+	"..\ffmpeg\libavcodec\vp5data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VP5_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp56.c
+DEP_CPP_VP56_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vp56.h"\
+	"..\ffmpeg\libavcodec\vp56data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VP56_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp56data.c
+DEP_CPP_VP56D=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\vp56data.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_VP56D=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp6.c
+DEP_CPP_VP6_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\bytestream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\vp56.h"\
+	"..\ffmpeg\libavcodec\vp56data.h"\
+	"..\ffmpeg\libavcodec\vp6data.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VP6_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vqavideo.c
+DEP_CPP_VQAVI=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_VQAVI=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\w32thread.c
+DEP_CPP_W32TH=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_W32TH=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\wavpack.c
+DEP_CPP_WAVPA=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_WAVPA=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\FFMPEG\libavcodec\wmadec_fix.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\wnv1.c
+DEP_CPP_WNV1_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_WNV1_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE="..\ffmpeg\libavcodec\ws-snd1.c"
+DEP_CPP_WS_SN=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_WS_SN=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xan.c
+DEP_CPP_XAN_C=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_XAN_C=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xiph.c
+DEP_CPP_XIPH_=\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\xiph.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	
+NODEP_CPP_XIPH_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xl.c
+DEP_CPP_XL_C19c=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_XL_C19c=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xvmcvideo.c
+DEP_CPP_XVMCV=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavcodec\bitstream.h"\
+	"..\ffmpeg\libavcodec\dsputil.h"\
+	"..\ffmpeg\libavcodec\eval.h"\
+	"..\ffmpeg\libavcodec\mpegvideo.h"\
+	"..\ffmpeg\libavcodec\ratecontrol.h"\
+	"..\ffmpeg\libavcodec\rl.h"\
+	"..\ffmpeg\libavcodec\xvmc_render.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_XVMCV=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\zmbv.c
+DEP_CPP_ZMBV_=\
+	"..\ffmpeg\config.h"\
+	"..\ffmpeg\include\inttypes.h"\
+	"..\ffmpeg\libavcodec\avcodec.h"\
+	"..\ffmpeg\libavutil\avutil.h"\
+	"..\ffmpeg\libavutil\bswap.h"\
+	"..\ffmpeg\libavutil\common.h"\
+	"..\ffmpeg\libavutil\integer.h"\
+	"..\ffmpeg\libavutil\internal.h"\
+	"..\ffmpeg\libavutil\intfloat_readwrite.h"\
+	"..\ffmpeg\libavutil\intreadwrite.h"\
+	"..\ffmpeg\libavutil\log.h"\
+	"..\ffmpeg\libavutil\mathematics.h"\
+	"..\ffmpeg\libavutil\mem.h"\
+	"..\ffmpeg\libavutil\rational.h"\
+	
+NODEP_CPP_ZMBV_=\
+	"..\ffmpeg\libavutil\config.h"\
+	"..\ffmpeg\libavutil\libvo\fastmemcpy.h"\
+	
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\aac_ac3_parser.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3_parser.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ac3tab.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\all.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\atrac3data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\avcodec.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bethsoftvideo.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bits.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bitstream.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\block.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bmp.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\bytestream.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cabac.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cavs.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cavsdata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\cookdata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dca.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dcadata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dcahuff.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dnxhddata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dsputil.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\dvdata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\eval.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faac.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faaccfg.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faad.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\faandct.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\fastfft.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\golomb.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h261.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h261data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h263_parser.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h263data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264_parser.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\h264data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\imcdata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\imgconvert_template.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\indeo2data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\indeo3data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\interface.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jpegls.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\jpeglsdec.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\kbd_win.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\lzw.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mathops.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpeg.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpegdec.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mjpegenc.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\monopred.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpcdata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpeg12data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpeg4data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpeg4video_parser.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudio.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiodata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiodecheader.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiodectab.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegaudiotab.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\mpegvideo.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msmpeg4.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msmpeg4data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\msmpeg4tab.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\nok_lt_prediction.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\nok_ltp_common.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\nok_ltp_common_internal.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\opt.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\parser.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\pnm.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\port.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\qdm2data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ra144.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ra288.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rangecoder.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ratecontrol.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rl.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rle.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\roqvideo.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\rtjpeg.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\s3tc.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\sgi.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\simple_idct.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\snow.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\sp5x.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\svq1_cb.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\svq1_vlc.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tiff.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\tns.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\transfo.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\truemotion1data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\truespeech_data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\ulti_cb.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\util.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1acdata.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vc1data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vorbis.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vorbis_enc_data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp3data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp56.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp56data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp5data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\vp6data.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\FFMPEG\libavcodec\wmadata_fix.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xiph.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xvid_internal.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\ffmpeg\libavcodec\xvmc_render.h
+# End Source File
+# End Group
+# End Target
+# End Project
