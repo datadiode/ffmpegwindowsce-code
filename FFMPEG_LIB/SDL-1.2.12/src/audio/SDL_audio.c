@@ -27,6 +27,7 @@
 #include "SDL_audio_c.h"
 #include "SDL_audiomem.h"
 #include "SDL_sysaudio.h"
+#include "windows.h"
 
 #ifdef __OS2__
 /* We'll need the DosSetPriority() API! */
@@ -116,6 +117,7 @@ static AudioBootStrap *bootstrap[] = {
 	NULL
 };
 SDL_AudioDevice *current_audio = NULL;
+SDL_Thread *m_pAudioThread = NULL;
 
 /* Various local functions */
 int SDL_AudioInit(const char *driver_name);
@@ -173,12 +175,13 @@ int SDLCALL SDL_RunAudio(void *audiop)
         }
 #endif
 #endif
+	
 
 	/* Loop, filling the audio buffers */
-	while ( audio->enabled ) {
-
+	while ( audio->enabled ) {	
 		/* Fill the current buffer with sound */
 		if ( audio->convert.needed ) {
+
 			if ( audio->convert.buf ) {
 				stream = audio->convert.buf;
 			} else {
@@ -216,12 +219,13 @@ int SDLCALL SDL_RunAudio(void *audiop)
 		}
 
 		/* Wait for an audio buffer to become available */
-		if ( stream == audio->fake_stream ) {
+			if ( stream == audio->fake_stream ) {
 			SDL_Delay((audio->spec.samples*1000)/audio->spec.freq);
 		} else {
 			audio->WaitAudio(audio);
 		}
 	}
+
 
 	/* Wait for the audio to drain.. */
 	if ( audio->WaitDone ) {
@@ -561,6 +565,7 @@ int SDL_OpenAudio(SDL_AudioSpec *desired, SDL_AudioSpec *obtained)
 			audio->thread = SDL_CreateThread(SDL_RunAudio, audio, NULL, NULL);
 #else
 			audio->thread = SDL_CreateThread(SDL_RunAudio, audio);
+			m_pAudioThread = audio->thread;
 #endif
 			if ( audio->thread == NULL ) {
 				SDL_CloseAudio();
@@ -630,7 +635,6 @@ void SDL_CloseAudio (void)
 void SDL_AudioQuit(void)
 {
 	SDL_AudioDevice *audio = current_audio;
-
 	if ( audio ) {
 		audio->enabled = 0;
 		if ( audio->thread != NULL ) {
@@ -700,4 +704,9 @@ void SDL_CalculateAudioSpec(SDL_AudioSpec *spec)
 	spec->size = (spec->format&0xFF)/8;
 	spec->size *= spec->channels;
 	spec->size *= spec->samples;
+}
+
+SDL_Thread* SDL_GetAudioThread()
+{
+	return m_pAudioThread;
 }

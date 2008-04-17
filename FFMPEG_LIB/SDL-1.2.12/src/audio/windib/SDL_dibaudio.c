@@ -116,6 +116,7 @@ static void CALLBACK FillSound(HWAVEOUT hwo, UINT uMsg, DWORD_PTR dwInstance,
 #if defined(_WIN32_WCE) && (_WIN32_WCE < 300)
 	ReleaseSemaphoreCE(audio_sem, 1, NULL);
 #else
+	Sleep(100);
 	ReleaseSemaphore(audio_sem, 1, NULL);
 #endif
 }
@@ -145,7 +146,7 @@ static void SetMMerror(char *function, MMRESULT code)
 /* Set high priority for the audio thread */
 static void DIB_ThreadInit(_THIS)
 {
-	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_HIGHEST);
+	SetThreadPriority(GetCurrentThread(), THREAD_PRIORITY_ABOVE_NORMAL);
 }
 
 void DIB_WaitAudio(_THIS)
